@@ -29,9 +29,22 @@ const dataAneh = {
 // const isiAhmad = dataAneh.listing[1].hobbies;
 // console.log(isiAhmad);
 
-const isiAhmad = dataAneh.listing.filter((item) => {
-  return item.name === "ahmad";
-});
-for (const i in isiAhmad[0].hobbies[0]) {
-  console.log(isiAhmad[0].hobbies[0][i]);
-}
+// const isiAhmad = dataAneh.listing.filter((item) => {
+//   return item.name === "ahmad";
+// });
+
+// for (const i in isiAhmad[0].hobbies[0]) {
+//   console.log(isiAhmad[0].hobbies[0][i]);
+// }
+
+const getAhmad = () => {
+  const isiAhmad = dataAneh.listing.filter((item) => {
+    return item.name === "ahmad";
+  });
+
+  for (const i in isiAhmad[0].hobbies[0]) {
+    console.log(isiAhmad[0].hobbies[0][i]);
+  }
+};
+
+getAhmad();
